@@ -1,0 +1,11 @@
+gpg --recv-keys --keyserver hkp://pgp.mit.edu 1EB2638FF56C0C53
+
+yaourt -S --noconfirm pacaur
+sudo pacman -S --noconfirm jre8-openjdk jdk8-openjdk java-openjfx wget chromium fish
+pacaur -S --noconfirm sublime-text-dev spotify brackets 
+pacaur -S ttf-ms-fonts
+
+cd ~/Downloads && wget https://www.apachefriends.org/xampp-files/5.5.38/xampp-linux-x64-5.5.38-1-installer.run && sudo chmod +x xampp-linux-x64-5.5.38-1-installer.run && sudo ./xampp-linux-x64-5.5.38-1-installer.run
+
+
+
