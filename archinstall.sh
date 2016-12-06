@@ -48,8 +48,8 @@ yes| mkfs.ext4 "/dev/"$sdx"3"
 
 #mount and create base system
 
-# mkswap "/dev/"$sdx"2"
-# swapon "/dev/"$sdx"2"
+#mkswap "/dev/"$sdx"2"
+#swapon "/dev/"$sdx"2"
 
 mount "/dev/"$sdx"3" /mnt
 mkdir /mnt/boot
@@ -82,8 +82,9 @@ read hname
 echo $hname > /etc/hostname
 
 
-#sed -i -e 's/#[multilib]/[multilib]/g' /etc/pacman.conf
-#sed -i -e 's/#Include = /etc/pacman.d/mirrorlist/Include = /etc/pacman.d/mirrorlist/g' /etc/pacman.conf
-#echo "Please change the password for the root user now:"
-#passwd
-#bootctl install
+sed -i -e 's/#\[multilib\]/\[multilib\]/g' /etc/pacman.conf
+sed -i -e 's/#Include = \/etc\/pacman.d\/mirrorlist/Include = \/etc\/pacman.d\/mirrorlist/g' /etc/pacman.conf
+
+echo "Please change the password for the root user now:"
+passwd
+bootctl install
