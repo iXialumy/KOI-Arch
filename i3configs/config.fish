@@ -1,0 +1,7 @@
+alias mysql "/opt/lampp/bin/mysql"
+alias lampp "sudo /opt/lampp/lampp" 
+alias sublime "subl3"
+alias fixwlan "~/Dropbox/Linux/scripts/fixwlan.sh"
+alias checkbat "grep -E 'state|to\ full|percentage'"
+alias spacman "pacman -Ss "
+alias spacaur "pacaur -Ss "
